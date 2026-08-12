@@ -1,0 +1,19 @@
+ai-cloud-monitor/
+├── telemetry/                 # Telemetry ingestion & Prometheus configs
+│   ├── prometheus.yml
+│   └── metric_collector.py    # Simulates/collects 1,000+ metrics/sec
+├── ml_engine/                 # PyTorch models & training scripts
+│   ├── train.py
+│   ├── model.py               # LSTM / Autoencoder anomaly detector
+│   └── inference_service.py   # FastAPI endpoint serving model predictions
+├── dashboard/                 # React.js Frontend
+│   ├── src/
+│   │   ├── components/        # Metrics charts & Alert logs
+│   │   └── App.js
+│   └── package.json
+├── k8s/                       # Kubernetes manifests & Helm charts
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   └── cluster-autoscaler.yaml
+├── docker-compose.yml          # Local environment setup
+└── README.md                  # Comprehensive documentation
